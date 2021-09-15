@@ -26,5 +26,5 @@ app.listen(PORT, () => console.log(`Server is running on port:${PORT}`));
 // GET
 app.get('/api/jokes/', getTenJokes);
 app.get('/api/jokes/:amount', getAmountJokes);
-app.get('/api/jokes/:category', getTenJokesFromCategory);
+app.get('/api/joke/:category', getTenJokesFromCategory);
 app.get('/api/jokes/:category/:amount', getAmountJokesFromCategory);
